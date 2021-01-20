@@ -1,8 +1,7 @@
-let randomNumber=Math.floor(Math.random()*100);
 
 let ones = Math.floor(Math.random()*10);
 
-let tens = Math.floor(Math.random()*10);
+let tens = Math.floor(Math.random()*11);
 
 console.log('The number is: '+tens+''+ones);
 
@@ -43,8 +42,10 @@ let text;
         case 9:
             text='yhdeksän';
             break;
+        case 10:
+            text='sata';
     }
-    if(tens>1) {
+    if(tens>1&&tens<10) {
         text+="kymmentä";
     } else {
         
