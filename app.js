@@ -1,11 +1,12 @@
 
-let ones = Math.floor(Math.random()*10);
 
 let tens = Math.floor(Math.random()*11);
-
-console.log('The number is: '+tens+''+ones);
-
 let text;
+if (tens===10) {
+    text="sata (100)";
+    console.log(text);
+} else {
+    ones = Math.floor(Math.random()*10);
 
     switch(tens) {
         case 0:
@@ -50,7 +51,6 @@ let text;
     } else {
         
     }
-    
     switch(ones) {
         case 0:
             text+=('');
@@ -91,4 +91,5 @@ let text;
     if(tens===1&&ones!=0) {
         text+="toista";
     }
-    console.log(text);
+    console.log(text+" ("+tens+''+ones+")");   
+}
